@@ -1,7 +1,12 @@
+body{
+    background-color: #f9f9f9;
+}
+
 a.nav-link {
     text-transform: uppercase;
     margin: 0 5px;
 }
+
 
 nav li.active{
     border-bottom: 1px solid skyblue;
@@ -10,10 +15,70 @@ nav li.active{
 
 .section{
     height: 100vh;
+    padding: 50px 0 30px 0;
+    background-size: cover;
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+#services {
+    background: #fff;    
 }
+
+#services .service {
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    height: 200px;
+    position: relative;
+    background: #fafafa;
+}
+
+#services .icon {
+    position: absolute;
+    top: -36px;
+    left: calc(50% - 36px);
+    transition: 0.2s;
+    border-radius: 50%;
+    display: inline-block;
+    border: 6px solid #fff;
+  }
+  
+  #services .icon a {
+    display: inline-block;
+    background: #2dc997;
+    border: 2px solid #2dc997;
+    padding: 16px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  #services .icon i {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  #services .service:hover .icon i {
+    color: #2dc997;
+  }
+  
+  #services .service:hover .icon a {
+    color: #2dc997;
+    background: #fff;
+  }
+  
+  #services .title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  #services .title a {
+    color: #111;
+  }
+  
+  #services .description {
+    font-size: 14px;
+    line-height: 24px;
+  }
