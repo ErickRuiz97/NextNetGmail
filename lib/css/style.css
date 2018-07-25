@@ -11,3 +11,9 @@ nav li.active{
 .section{
     height: 100vh;
 }
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
