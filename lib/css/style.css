@@ -1,0 +1,13 @@
+a.nav-link {
+    text-transform: uppercase;
+    margin: 0 5px;
+}
+
+nav li.active{
+    border-bottom: 1px solid skyblue;
+    outline: none;
+}
+
+.section{
+    height: 100vh;
+}
