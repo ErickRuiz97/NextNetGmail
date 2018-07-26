@@ -13,15 +13,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #2196F3;
 }
 
 a:hover {
-  color: #fec503;
+  color: #2196F3;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #2196F3 !important;
 }
 
 h1,
@@ -70,8 +70,8 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #2196F3;
+  border-color: #2196F3;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -85,12 +85,12 @@ section h3.section-subheading {
 }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #2196F3;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #2196F3;
   text-shadow: none;
 }
 
@@ -113,12 +113,12 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #2196F3;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #2196F3;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
@@ -136,7 +136,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #2196F3;
 }
 
 @media (min-width: 992px) {
@@ -172,7 +172,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url('../../assets/images/header-bg.png');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -250,7 +250,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: #2196F3;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -454,7 +454,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #2196F3;
 }
 
 .timeline > li .timeline-image h4 {
@@ -598,7 +598,7 @@ header.masthead .intro-text .intro-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/map-image.png");
+  background-image: url("../../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -625,7 +625,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #2196F3;
   box-shadow: none;
 }
 
@@ -695,5 +695,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #2196F3;
 }

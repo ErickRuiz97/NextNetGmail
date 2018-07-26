@@ -21,7 +21,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
-    <link href="lib/css/agency.min.css" rel="stylesheet">
+    <link href="lib/css/agency.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="lib/css/style.css">
 
   </head>
 
@@ -35,21 +37,14 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
+          <ul class="navbar-nav text-uppercase ml-auto"><li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about"> <i class="fas fa-users"></i> About</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services"> <i class="fas fa-cogs"></i> Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio"> <i class="fas fa-check"></i> Apply</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about"> <i class="fas fa-users"></i> About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about"> <i class="fas fa-building"></i> Bussines</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team"><i class="fas fa-hand-holding-usd"></i> Offers</a>
+              <a class="nav-link js-scroll-trigger" href="#offers"><i class="fas fa-hand-holding-usd"></i> Offers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact"> <i class="fas fa-user"></i> Contact</a>
@@ -70,6 +65,33 @@
       </div>
     </header>
 
+      <!-- About --> 
+      <section id="about" >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2 class="section-heading text-uppercase">About</h2>
+              <h3 class="section-subheading text-muted">A few words about us</h3>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-stretch">
+            <div class="col-sm-12 col-lg-6 order-lg-2">
+              <img src="assets/images/team.jpg" alt="" class="teamwork">
+            </div>
+            <div class="col-sm-12 col-lg-6 order-lg-1">
+              <p>
+                  we are innovating company looking for our client's satisfaction since 2004. Our company
+                  has work hard to guarantee high quality services. We specialize in the products that we offer.
+                  We guarantee 100% the money that you have invested is secure the services that we provide is television,
+                  internet in high velocity and security systems for the protection of your company. Our employees are group
+                  of individuals that have the capacity and considaration to solve any problem that may occur and provide a solution.
+                  With Next Net and Next Net Security serenity is 100% guaranteed
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     <!-- Services -->
     <section id="services">
       <div class="container">
@@ -82,329 +104,226 @@
         <div class="row text-center">
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+              <img src="assets/images/logo.png" alt="" width="130px" height="130px">
             </span>
-            <h4 class="service-heading">E-Commerce</h4>
+            <h4 class="service-heading"> <a href="#nettv-offer"> Net TV</a> </h4>
             <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                <img src="assets/images/spectrum.png" alt="" width="130px" height="130px">
             </span>
-            <h4 class="service-heading">Responsive Design</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading"> <a href="#spectrum-offer"> Spectrum </a> </h4>
+            <p class="text-muted">
+                Spectrum HDTV programming is often displayed in a different format from standard television programming. This may result in black bars on the screen or stretched images.
+            </p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
-              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-              <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                <img src="assets/images/directv.png" alt="" width="130px" height="130px">
             </span>
-            <h4 class="service-heading">Web Security</h4>
-            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <h4 class="service-heading"> <a href="#directtv-offer"> Direct TV </a> </h4>
+            <p class="text-muted">
+                With just pressing the "Active" button of your control, you have the best ally at home to get DIRECTV 
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <!-- offers Grid -->
+    <section class="bg-light" id="offers">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h2 class="section-heading text-uppercase">Offers</h2>
+            <h3 class="section-subheading text-muted">Our most popular offerts.</h3>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Threads</h4>
-              <p class="text-muted">Illustration</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
-            </div>
+        <div class="row" id="nettv-offer">
+          <div class="col-sm-12">
+            <h3 class="title">Net Tv Offers</h3>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="row my-3 py-2">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+               
+              </div>
+            </div>
+          </div>
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2009-2011</h4>
-                    <h4 class="subheading">Our Humble Beginnings</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>March 2011</h4>
-                    <h4 class="subheading">An Agency is Born</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>July 2014</h4>
-                    <h4 class="subheading">Phase Two Expansion</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4>Be Part
-                    <br>Of Our
-                    <br>Story!</h4>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="bg-light" id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="">
-              <h4>Kay Garland</h4>
-              <p class="text-muted">Lead Designer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                
+              </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="">
-              <h4>Larry Parker</h4>
-              <p class="text-muted">Lead Marketer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="team-member">
-              <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="">
-              <h4>Diana Pertersen</h4>
-              <p class="text-muted">Lead Developer</p>
-              <ul class="list-inline social-buttons">
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#">
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+               
+              </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+        <div class="row " id="spectrum-offer">
+          <div class="col-sm-12">
+            <h3 class="title">Spectrum Offers</h3>
+          </div>
+        </div>
+        <div class="row my-3 py-2 card-group" >
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+              <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Triple Play SELECT</h5>
+                  <p class="card-text text-center">
+                      125+ <br><small>Channels</small> 
+                      <h5 class="h4 text-center text-success">$29.99/mo.</h5>
+                      <small>
+                          ESPN, Discovery,CNN, Lifetime, TLC, HGTV,and much more!
+                      </small>
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+              <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Triple Play SILVER</h5>
+                  <p class="card-text text-center">
+                      175+ <br><small>Channels</small> 
+                      <h5 class="h4 text-center text-success">$20 more per mo*.</h5>
+                      <small>
+                          All Select Channels PLUS HBO , Showtime , Cinemax  and NFL Network
+                      </small>
+                    </p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+              <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Triple Play GOLD</h5>
+                  <p class="card-text text-center">
+                      200+ <br><small>Channels</small> 
+                      <h5 class="h4 text-center text-success">$20 more per mo*.</h5>
+                      <small>
+                          All Silver Channels PLUS STARZ , TMC , STARZ ENCORE  and NFL RedZone
+                      </small>
+                    </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="directtv-offer">
+            <div class="col-sm-12">
+              <h3 class="title">Direct Tv Offers</h3>
+            </div>
+          </div>
+          <div class="row my-3 py-2 card-group">
+              <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">SELECT <sub>™</sub></h5>
+                    <p class="card-text text-center">
+                      155+ <br><small>Channels</small> 
+                      <h5 class="h4 text-center text-success">$35/mo.</h5>
+                      <small>
+                          Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $78/mo. in months 13-24 (subject to change).
+                      </small>
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">ENTERTAINMENT</h5>
+                    <p class="card-text text-center">
+                        160+ <br> <small>Channels</small>
+                        <h5 class="h4 text-center text-success">$40/mo.</h5>
+                        <small>
+                          Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $90/mo. in months 13-24 (subject to change).
+                        </small>
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+                <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">CHOICE <sub>™</sub></h5>
+                    <p class="card-text text-center">
+                        185+ <br> <small>Channels</small>
+                        <h5 class="h4 text-center text-success">$45/mo.</h5>
+                        <small>
+                            Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $105/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
+                        </small>
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+              <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                  <h5 class="card-title text-center">XTRA</h5>
+                  <p class="card-text text-center">
+                      235+ <br> <small>Channels</small>
+                      <h5 class="h4 text-center text-success">$55/mo.</h5>
+                      <small>
+                          Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $117/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
+                      </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+          <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
+              <div class="card-body">
+                <h5 class="card-title text-center">ULTIMATE</h5>
+                <p class="card-text text-center">
+                    250+ <br> <small>Channels</small>
+                    <h5 class="h4 text-center text-success">$60/mo.</h5>
+                    <small>
+                        Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $128/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
+                    </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <h5 class="card-title text-center">PREMIER <sub>™</sub></h5>
+              <p class="card-text text-center">
+                  330+ <br> <small>Channels</small>
+                  <h5 class="h4 text-center text-success">$110/mo.</h5>
+                  <small>
+                      Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $181/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
+                  </small>
+              </p>
+            </div>
           </div>
         </div>
       </div>
+    </div>
     </section>
-
-    <!-- Clients -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="assets/img/logos/envato.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="assets/img/logos/designmodo.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="assets/img/logos/themeforest.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="assets/img/logos/creative-market.jpg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- end offers -->
 
     <!-- Contact -->
     <section id="contact">
@@ -450,8 +369,11 @@
         </div>
       </div>
     </section>
+    <div class="col-auto">
+        <a class="btn btn-primary btn-lg float-right shadow-lg  mb-2" id="btn_add_action" title="Send a message"  href="#"><i class="fas fa-envelope"></i></a>
+    </div>
 
-    <!-- Footer -->
+    <!-- Footer 
     <footer>
       <div class="container">
         <div class="row">
@@ -489,214 +411,12 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer>  -->
 
     <!-- Portfolio Modals -->
 
-    <!-- Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal 6 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
-                  </ul>
-                  <button class="btn btn-primary" data-dismiss="modal" type="button">
-                    <i class="fa fa-times"></i>
-                    Close Project</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    
+    
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
