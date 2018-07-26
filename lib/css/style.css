@@ -10,8 +10,8 @@ header{
 }
 
 #nettv-offer, #spectrum-offer, #directtv-offer{
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
   padding: 20px;
 }
 #btn_add_action{
@@ -26,6 +26,12 @@ header{
 #services{
   background-color: #222;
   color: #fff;
+}
+
+#offers{
+  background: url('../../assets/images/offers-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .card .card-title{
