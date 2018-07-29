@@ -15,14 +15,14 @@ header{
 }
 #btn_add_action{
   position: fixed;
-  bottom: 22px;
-  right: 22px;
+  bottom: 1.7rem;
+  right: 1.7rem;
   border-radius: 50%;
   outline: none;
   z-index: 1000;
 }
 
-#services{
+#services, #programming-tv{
   background-color: #222;
   color: #fff;
 }
@@ -33,6 +33,7 @@ header{
   background-attachment: fixed;
 }
 
+
 .card .card-title{
   color: dodgerblue;
 }
@@ -42,6 +43,63 @@ header{
   height: 100%;
   min-height: 550px;
 }
+
+.chat-room{
+  height: 85%;
+  transition: ease-in .5s;
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1.8rem;
+  z-index: 10000;
+  border-radius: 15px;
+  margin: 5px auto;
+}
+
+.chat-room .chat-body .chat-sent{
+  position: relative;
+  top: 1px;
+  margin-top: 5px;
+  display: block;
+  text-align: right;
+}
+
+.chat-room .chat-body{
+  position: relative;
+  overflow: scroll;
+  height: 60%;
+  border: none;
+}
+
+
+.chat-room small.chat-time{
+  color: gray;
+  float: right;
+}
+.chat-room .chat-header{
+  border-radius: 15px 15px 0 0;
+  height: 160px;
+  padding: 10px;
+  color: #f9f9f9;
+  z-index: 2000;
+  background: rgb(30,144,255);
+  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(59,80,167,1) 76%, rgba(3,48,57,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.chat-room .chat-header .chat-icon{
+  width: 80px;
+  height: 80px;
+}
+
+.chat-room .chat-send{
+  position: absolute;
+  height: 70px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  padding: 8px;
+}
+
+
 .teamwork{
   width: 90%;
   height: 100%;
