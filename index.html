@@ -51,6 +51,9 @@
               <a class="nav-link js-scroll-trigger" href="#programming-tv"><i class="fas fa-tv"></i> TV Programming</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><i class="fas fa-address-card"></i> apply</a>
+              </li>
+            <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#team"><i class="fas fa-users"></i> team</a>
               </li>
             <li class="nav-item">
@@ -60,7 +63,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Header -->
     <header class="masthead">
       <div class="container">
@@ -72,6 +74,75 @@
       </div>
     </header>
 
+
+    <!-- Modal apply -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+            <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" >Apply with us <i class="fas fa-thumbs-up"></i></h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inp-name">First Name</label>
+                                    <input type="text" class="form-control" id="inp-name" placeholder="Write your name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inp-lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="inp-lastname" placeholder="Last name">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inp-email">Email</label>
+                                    <input type="email" class="form-control" id="inp-email" placeholder="example@domain.com">
+                                  </div>
+                                <div class="form-group">
+                                  <label for="inp-address">Address</label>
+                                  <input type="text" class="form-control" id="inp-address" placeholder="1234 Main St...">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Choose...</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="inp-file">Send your CV</label>
+                                      <input type="file" class="form-control" id="inp-file">
+                                    </div>
+                                </div>
+                              </form>
+                        </div>
+                        <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> <i class="fas fa-times-circle"></i> Close</button>
+                              <button type="button" class="btn btn-outline-success"> <i class="far fa-paper-plane"></i> Send</button>
+                        </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!--end modal-->
       <!-- About --> 
       <section id="about" >
         <div class="container">
