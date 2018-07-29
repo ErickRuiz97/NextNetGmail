@@ -49,50 +49,7 @@ header{
   bottom: 21rem;
   right: 1.8rem;
   z-index: 3000;
-}
-
-.chat-room .chat-body .chat-sent{
-  position: relative;
-  top: 1px;
-  margin-top: 5px;
-  display: block;
-  text-align: right;
-}
-
-.chat-room .chat-body{
-  position: relative;
-  overflow: scroll;
-  height: 60%;
-  border: none;
-}
-
-
-.chat-room small.chat-time{
-  color: gray;
-  float: right;
-}
-.chat-room .chat-header{
-  border-radius: 15px 15px 0 0;
-  height: 160px;
-  padding: 10px;
-  color: #f9f9f9;
-  z-index: 2000;
-  background: rgb(30,144,255);
-  background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(59,80,167,1) 76%, rgba(3,48,57,1) 100%, rgba(0,212,255,1) 100%);
-}
-
-.chat-room .chat-header .chat-icon{
-  width: 80px;
-  height: 80px;
-}
-
-.chat-room .chat-send{
-  position: absolute;
-  height: 70px;
-  bottom: 0px;
-  right: 0;
-  left: 0;
-  padding: 8px;
+  display: none;
 }
 
 
@@ -275,16 +232,16 @@ header{
   float: right;
 }
 .messages .message.right .text_wrapper {
-  background-color: #c7eafc;
+  background-color: #a3d063;
   margin-right: 20px;
   float: right;
 }
 .messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
   left: 100%;
-  border-left-color: #c7eafc;
+  border-left-color: #a3d063;;
 }
 .messages .message.right .text {
-  color: #45829b;
+  color: #f9f9f9;
 }
 .messages .message.appeared {
   opacity: 1;
