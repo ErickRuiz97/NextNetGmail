@@ -9,6 +9,10 @@ header{
   padding: 80px 40px;
 }
 
+.listas{
+  list-style: none;
+}
+
 #nettv-offer, #spectrum-offer, #directtv-offer{
   margin-top: 4rem;
   margin-bottom: 1rem;
@@ -59,6 +63,12 @@ header{
 }
 .team-img{
   min-width: 350px;
+  border: none;
+  width: 300px; height: 225px ; margin: 10px;
+}
+
+.img-circle {
+  border-radius: 40px;
 }
 
 .section{

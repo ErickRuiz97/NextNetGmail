@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <title>Next Net</title>
     <link rel="icon" href="assets/images/nextnet.png" type="image/icon">
@@ -14,14 +16,19 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="lib/wow/animate.css">
     <!-- Custom styles for this template -->
     <link href="lib/css/agency.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="lib/css/style.css">
 
@@ -32,32 +39,34 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">NextNet</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" > NextNet </a>
+
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about"> <i class="fas fa-users"></i> About</a>
+              <a class="nav-link js-scroll-trigger" href="#about" > <i class="fas fa-users"></i> Acerca de</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services"> <i class="fas fa-cogs"></i> Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services" > <i class="fas fa-cogs"></i> Servicios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#offers"><i class="fas fa-hand-holding-usd"></i> Offers</a>
+              <a class="nav-link js-scroll-trigger" href="#offers" ><i class="fas fa-hand-holding-usd"></i> Ofertas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#programming-tv"><i class="fas fa-tv"></i> TV Programming</a>
+              <a class="nav-link js-scroll-trigger" href="#programming-tv" ><i class="fas fa-tv"></i> TV</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><i class="fas fa-address-card"></i> apply</a>
+                <a class="nav-link js-scroll-trigger" href="#" data-toggle="modal" data-target=".bd-example-modal-lg" ><i class="fas fa-address-card"></i> Aplicar</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#team"><i class="fas fa-users"></i> team</a>
+                <a class="nav-link js-scroll-trigger" href="#team" ><i class="fas fa-users"></i> Equipo</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact"> <i class="fas fa-user"></i> Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact" > <i class="fas fa-user"></i> Contacto </a>
             </li>
           </ul>
         </div>
@@ -67,8 +76,8 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in">Welcome To NEXTNET</div>
-          <div class="intro-heading text-uppercase">Future is here </div>
+          <div class="intro-lead-in">Bienvenidos a  NEXTNET</div>
+          <div class="intro-heading text-uppercase">¡El futuro esta aqu&iacute;!</div>
           <a class=" js-scroll-trigger" href="#services"><img src="assets/images/nextnet.png" alt="" width="150px" height="150px"></a>
         </div>
       </div>
@@ -83,73 +92,69 @@
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                       <div class="modal-header">
-                          <h5 class="modal-title" >Apply with us <i class="fas fa-thumbs-up"></i></h5>
+                          <h5 class="modal-title" >Aplica con nosotros: <i class="fas fa-thumbs-up"></i></h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
 
                         <div class="modal-body">
-                            <form>
+                            <form id="formulario">
                                 <div class="form-row">
                                   <div class="form-group col-md-6">
-                                    <label for="inp-name">First Name</label>
-                                    <input type="text" class="form-control" id="inp-name" placeholder="Write your name">
+                                    <label for="inp-name" id="primern" > Primer Nombre: </label>
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Write your name">
                                   </div>
                                   <div class="form-group col-md-6">
-                                    <label for="inp-lastname">Last Name</label>
-                                    <input type="text" class="form-control" id="inp-lastname" placeholder="Last name">
+                                    <label for="inp-lastname" id="lastn"> Apellido: </label>
+                                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name">
                                   </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inp-email">Email</label>
-                                    <input type="email" class="form-control" id="inp-email" placeholder="example@domain.com">
+                                    <label for="inp-email" id="email"> Correo electronico: </label>
+                                    <input type="email" class="form-control" name="mail" id="mail" placeholder="example@domain.com">
                                   </div>
                                 <div class="form-group">
-                                  <label for="inp-address">Address</label>
-                                  <input type="text" class="form-control" id="inp-address" placeholder="1234 Main St...">
+                                  <label for="inp-address" id="direccion"> Direccion: </label>
+                                  <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St...">
                                 </div>
                                 <div class="form-row">
                                   <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
+                                    <label for="inputCity" id="ciudad"> Ciudad: </label>
+                                    <input type="text" class="form-control" name="city" id="city">
                                   </div>
                                   <div class="form-group col-md-4">
-                                    <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control">
-                                      <option selected>Choose...</option>
-                                      <option>...</option>
-                                    </select>
+                                    <label for="inputphone"  id="telefono"> Telefono: </label>
+                                    <input type="text" class="form-control" name="telefono" id="inputphone">
                                   </div>
                                   <div class="form-group col-md-2">
-                                    <label for="inputZip">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip">
+                                    <label for="inputZip"  id="zip"> Codigo Postal: </label>
+                                    <input type="text" class="form-control" id="inputZip" name="zip">
                                   </div>
                                   <div class="form-group">
-                                      <label for="inp-file">Send your CV</label>
-                                      <input type="file" class="form-control" id="inp-file">
+                                      <label for="inp-file"  id="archivo"> CV: </label>
+                                      <input type="file" class="form-control" id="inp-file" name="archivo">
                                     </div>
                                 </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> <i class="fas fa-times-circle"></i> Cerrar</button>
+                                      <button type="button" class="btn btn-outline-success" id="enviarf"> <i class="far fa-paper-plane"></i>Enviar</button>
+                                    </div>
                               </form>
                         </div>
-                        <div class="modal-footer">
-                              <button type="button" class="btn btn-outline-danger" data-dismiss="modal"> <i class="fas fa-times-circle"></i> Close</button>
-                              <button type="button" class="btn btn-outline-success"> <i class="far fa-paper-plane"></i> Send</button>
-                        </div>
+                        
                   </div>
                 </div>
               </div>
         </div>
       </div>
-    </section>
-    <!--end modal-->
-      <!-- About --> 
+    </section> 
       <section id="about" >
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">About</h2>
-              <h3 class="section-subheading text-muted">A few words about us</h3>
+              <h2 class="section-heading text-uppercase">Acerca de</h2>
+              <h3 class="section-subheading text-muted">Un poco acerca de nosotros...</h3>
             </div>
           </div>
           <div class="row d-flex justify-content-stretch">
@@ -158,59 +163,55 @@
             </div>
             <div class="col-sm-12 col-lg-6 order-lg-1">
               <p class="text-justify">
-                  We are innovating company looking for our client's satisfaction since 2004. Our company
-                  has work hard to guarantee high quality services. We specialize in the products that we offer.
-                  We guarantee 100% the money that you have invested is secure the services that we provide is television,
-                  internet in high velocity and security systems for the protection of your company. Our employees are group
-                  of individuals that have the capacity and considaration to solve any problem that may occur and provide a solution.
-                  With Next Net and Next Net Security serenity is 100% guaranteed
-              </p>
+                 Somos una empresa innovadora que busca la satisfacción de nuestros clientes desde el 2004. Nuestra empresa siempre trabaja duro para garantizar servicios de alta calidad. Nos especializamos en los productos que ofrecemos. Les garantizamos que el 100% del dinero que ha invertido es seguro, los servicios que brindamos son: televisión en alta velocidad, FULL HD, variaci&oacute;n de programaci&oacute;n en nuestro paquete y lo mejor de todo esto es que no pagas Pay Per View.
+              <p class="text-justify">
+                Deje de pagar cientos de dólares al año en facturas de cable que solo suben todo el tiempo sin motivo válido porque su compañía de cable piensa que no tiene opciones. Con Next TV tienes la opci&oacute;n de tener programaci&oacute;n en vivo. Todos los canales que pensaste que no podrías seguir obteniendo. Te los traemos a ti. Toda la transmisión en vivo en HD. Estamos constantemente avanzando para mejorar nuestros servicios. 
+            </p>
+            <p class="text-justify">
+              Todo lo que puedes pedir... m&aacute;s de 11,500 pel&iacute;culas, m&aacute;s de 50,000 episodios de series, m&aacute;s de 290 canales de TV en vivo, m&aacute;s programaci&oacute;n para adultos, Liga MX, Ligas Europeas, MLB, NBA, NHL, NFL, UFC, Box, conciertos y mucho m&aacute;s... Disponible para Roku, Android, Amazon Fire Stick, Mi Box, Cajas Chinas, Tv Box, Tablets, Etc.....
+            </p>
             </div>
           </div>
-          <div class="row">
-            <p class="text-justify">
-                Stop paying hundreds of dollars a year in cable bills that only go up all the time for no valid reason because your cable company thinks you have no options. With NextTV you do have options to have great live tv. All the channels you thought you could not afford to get anymore. We bring them to you. All live streaming in HD. We are constantly making strides to improve our service. If you have a channel suggestion. Bring it to us. We offer around the clock customer service.
-                Give Us A Full Acces Free Trial Today
-            </p>
-          </div>
+
         </div>
       </section>
 
     <!-- Services -->
-    <section  id="services">
+   <section  id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
+            <h2 class="section-heading text-uppercase">Servicios</h2>
             <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-md-4">
+          <div class="col-md-12">
+     
             <span class="fa-stack fa-4x">
               <img src="assets/images/logo.png" alt="" width="130px" height="130px" class="service-icon shadow ">
             </span>
-            <h4 class="service-heading"> <a href="#nettv-offer"> Next TV</a> </h4>
-            <p class="text-muted"> ---   </p>
+            <h4 class="service-heading text-center"> <a href="#nettv-offer"> Next TV</a> </h4>
+            <p class="text-justify"> <h2> Requerimientos: </h2>
+              <br>
+              <li class="listas">
+              <h7>Internet mayor a 5mb.. <br>
+               </h7>
+              </li>
+              <li class="listas">
+                <h7>
+                 Un televisor con entrada HDMI o un Smart Android TV o bien un televisor inteligente con la aplicación plex.
+                </h7>
+              </li>
+              <li class="listas">
+                <h7>
+                 Contar con un equipo ya sea Roku, Tv Android, Plex, ChromeCast, Tablet o alg&uacute;n tel&eacute;fono M&oacute;vil.
+                </h7>
+              </li>
+             </p>
+          
           </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-                <img src="assets/images/espectrum.png" alt="" width="130px" height="130px" class="service-icon shadow">
-            </span>
-            <h4 class="service-heading"> <a href="#spectrum-offer"> Spectrum </a> </h4>
-            <p class="text-muted">
-                Spectrum HDTV programming is often displayed in a different format from standard television programming. This may result in black bars on the screen or stretched images.
-            </p>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-                <img src="assets/images/directv.png" alt="" width="130px" height="130px" class="service-icon shadow">
-            </span>
-            <h4 class="service-heading"> <a href="#directtv-offer"> Direct TV </a> </h4>
-            <p class="text-muted">
-                With just pressing the "Active" button of your control, you have the best ally at home to get DIRECTV 
-            </p>
-          </div>
+
         </div>
       </div>
     </section>
@@ -220,197 +221,30 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Offers</h2>
-            <h3 class="section-subheading text-muted">Our most popular offers.</h3>
+            <h2 class="section-heading text-uppercase">Ofertas</h2>
+            <h3 class="section-subheading text-muted">Nuestras ofertas m&aacute;s populares.</h3>
           </div>
         </div>
         <div class="row" id="nettv-offer">
           <div class="col-sm-12">
-            <h3 class="title">Next Tv Offers</h3>
+            <h3 class="title">Ofertas de Next Tv</h3>
           </div>
         </div>
+        <div class="row my-3 py-2">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
 
-        <div class="row my-3 py-2" id="next-offer">
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card shadow p-3 mb-5 bg-white rounded">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="card-link text-success">Buy now </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card shadow p-3 mb-5 bg-white rounded">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="card-link text-success">Buy now </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card shadow p-3 mb-5 bg-white rounded">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="card-link text-success">Buy now </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row " id="spectrum-offer">
-          <div class="col-sm-12">
-            <h3 class="title">Spectrum Offers</h3>
-          </div>
-        </div>
-        <div class="row my-3 py-2 card-group" >
-            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-              <div class="card shadow p-3 mb-5 bg-white rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Triple Play SELECT</h5>
-                  <p class="card-text text-center">
-                      125+ <br><small>Channels</small> 
-                      <h5 class="h4 text-center text-success">$29.99/mo.</h5>
-                      <small>
-                          ESPN, Discovery,CNN, Lifetime, TLC, HGTV,and much more!
-                      </small>
-                    </p>
-                    <a href="#" class="card-link text-success">Buy now </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-              <div class="card shadow p-3 mb-5 bg-white rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Triple Play SILVER</h5>
-                  <p class="card-text text-center">
-                      175+ <br><small>Channels</small> 
-                      <h5 class="h4 text-center text-success">$20 more per mo*.</h5>
-                      <small>
-                          All Select Channels PLUS HBO , Showtime , Cinemax  and NFL Network
-                      </small>
-                    </p>
-                    <a href="#" class="card-link text-success">Buy now </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-              <div class="card shadow p-3 mb-5 bg-white rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-center">Triple Play GOLD</h5>
-                  <p class="card-text text-center">
-                      200+ <br><small>Channels</small> 
-                      <h5 class="h4 text-center text-success">$20 more per mo*.</h5>
-                      <small>
-                          All Silver Channels PLUS STARZ , TMC , STARZ ENCORE  and NFL RedZone
-                      </small>
-                  </p>
-                  <a href="#" class="card-link text-success">Buy now </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row" id="directtv-offer">
-            <div class="col-sm-12">
-              <h3 class="title">Direct Tv Offers</h3>
-            </div>
-          </div>
-          <div class="row my-3 py-2 card-group">
-              <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">SELECT <sub>™</sub></h5>
-                    <p class="card-text text-center">
-                      155+ <br><small>Channels</small> 
-                      <h5 class="h4 text-center text-success">$35/mo.</h5>
-                      <small>
-                          Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $78/mo. in months 13-24 (subject to change).
-                      </small>
-                    </p>
-                    <a href="#" class="card-link text-success">Buy now </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">ENTERTAINMENT</h5>
-                    <p class="card-text text-center">
-                        160+ <br> <small>Channels</small>
-                        <h5 class="h4 text-center text-success">$40/mo.</h5>
-                        <small>
-                          Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $90/mo. in months 13-24 (subject to change).
-                        </small>
-                    </p>
-                    <a href="#" class="card-link text-success">Buy now </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-                <div class="card shadow p-3 mb-5 bg-white rounded">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">CHOICE <sub>™</sub></h5>
-                    <p class="card-text text-center">
-                        185+ <br> <small>Channels</small>
-                        <h5 class="h4 text-center text-success">$45/mo.</h5>
-                        <small>
-                            Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $105/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
-                        </small>
-                    </p>
-                    <a href="#" class="card-link text-success">Buy now </a>
-                  </div>
-                </div>
-              </div>
-            <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-              <div class="card shadow p-3 mb-5 bg-white rounded">
-                <div class="card-body">
-                  <h5 class="card-title text-center">XTRA</h5>
-                  <p class="card-text text-center">
-                      235+ <br> <small>Channels</small>
-                      <h5 class="h4 text-center text-success">$55/mo.</h5>
-                      <small>
-                          Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $117/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
-                      </small>
-                  </p>
-                  <a href="#" class="card-link text-success">Buy now </a>
-                </div>
-              </div>
-            </div>
-          
-          <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-            <div class="card shadow p-3 mb-5 bg-white rounded">
-              <div class="card-body">
-                <h5 class="card-title text-center">ULTIMATE</h5>
-                <p class="card-text text-center">
-                    250+ <br> <small>Channels</small>
-                    <h5 class="h4 text-center text-success">$60/mo.</h5>
-                    <small>
-                        Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $128/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
-                    </small>
+                <h5 class="card-title">1 Caja Tv</h5>
+                <p class="card-text">
+                  <li class="text-justify">
+                    La mensualidad de nuestro servicio tiene un precio de $15 y al agregar un TV para disfrutar de nuestra excelente programaci&oacute;n solo deber&aacute; pagar $5 adicionales a su mensualidad.<br>
+                  </li>
                 </p>
-                <a href="#" class="card-link text-success">Buy now </a>
+
               </div>
             </div>
           </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-          <div class="card shadow p-3 mb-5 bg-white rounded">
-            <div class="card-body">
-              <h5 class="card-title text-center">PREMIER <sub>™</sub></h5>
-              <p class="card-text text-center">
-                  330+ <br> <small>Channels</small>
-                  <h5 class="h4 text-center text-success">$110/mo.</h5>
-                  <small>
-                      Plus taxes for 12 months w/24-mo. agmt. Autopay & Paperless bill req'd. $181/mo. in months 13-24 (subject to change). Regional Sports Fee up to $7.49/mo. is extra & applies in select markets.
-                  </small>
-              </p>
-              <a href="#" class="card-link text-success">Buy now </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
     <!-- end offers -->
 
@@ -419,49 +253,22 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Tv Progtamming</h2>
+            <h2 class="section-heading text-uppercase">Las mejores peliculas</h2>
           </div>
         </div>
         <div class="container-fluid">
             <div class="card text-center d-flex justify-cotent-stretch">
                 <div class="card-header">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tv-boys" role="tab" aria-controls="Boys" aria-selected="true">Kids</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tv-movies" role="tab" aria-controls="Movies" aria-selected="false">Movies</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tv-others" role="tab" aria-controls="Others" aria-selected="false">Others</a>
-                        </li>
-                      </ul>
-                      <div class="card-body">
                         <div class="tab-content" id="myTabContent">
                           <div class="tab-pane fade show active" id="tv-boys" role="tabpanel">
-                              <img src="assets/images/tv/boy-tv.png" class="img-fluid" alt="Image here">
-                              <h5 class="card-title my-5">Special programming for kids</h5>
-                          </div>
-                          <div class="tab-pane fade" id="tv-movies" role="tabpanel" >
-                              <img src="assets/images/tv/movies-tv.png" class="img-fluid" alt="Image here">
-                              <h5 class="card-title my-5">Special movies's programming </h5>
-                          </div>
-                          <div class="tab-pane fade" id="tv-others" role="tabpanel">
-                              <img src="assets/images/tv/tv.png" class="img-fluid" alt="Image here">
-                              <h5 class="card-title my-5">Programming for everyone</h5>
+                              <img src="assets/images/tv/movie.jpg" class="img-fluid" alt="Image here">
+                              <h5 class="card-title my-5">Con los mejores Servicios</h5>
                           </div>
                         </div>        
                       </div>
                 </div>
             </div>
-          </div> 
-          
-          <div class="row my-5">
-            <div class="col-md-8 offset-md-2 text-center">
-                <iframe width="90%" height="315" src="https://www.youtube.com/embed/QR6INOaWuyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-          </div>
-
+          </div>    
         </div>
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -470,14 +277,80 @@
         </div>
       </div>
     </section>
+<section  id="programming-tv">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Programaci&oacute;n</h2>
+          </div>
+        </div>
+        <div class="container-fluid">
+            <div class="card text-center d-flex justify-cotent-stretch">
+                <div class="card-header">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tv-boys" role="tab" aria-controls="Boys" aria-selected="false">Niños</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tv-movies" role="tab" aria-controls="Movies" aria-selected="false">Pel&iacute;culas</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="profile-adults" data-toggle="tab" href="#tv-adults" role="tab" aria-controls="Adults" aria-selected="false">Adultos</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tv-others" role="tab" aria-controls="Others" aria-selected="false">Otros</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="work" data-toggle="tab" href="#tv-tx3" role="tab" aria-controls="service" aria-selected="false">Nuestro equipo de trabajo</a>
+                        </li>
+                      </ul>
+                      <div class="card-body">
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="tv-boys" role="tabpanel">
+                              <img src="assets/images/tv/boy-tv.png" class="img-fluid" alt="Image here">
+                              <h5 class="card-title my-5">Programaci&oacute;n Especial para niños</h5>
+                          </div>
+                          <div class="tab-pane fade" id="tv-movies" role="tabpanel" >
+                              <img src="assets/images/tv/movies-tv.png" class="img-fluid" alt="Image here">
+                              <h5 class="card-title my-5">Programaci&oacute;n especial en pel&iacute;culas</h5>
+                          </div>
+                          <div class="tab-pane fade" id="tv-others" role="tabpanel">
+                              <img src="assets/images/tv/tv.png" class="img-fluid" alt="Image here">
+                              <h5 class="card-title my-5">Programaci&oacute;n para todos</h5>
+                          </div>
+                          <div class="tab-pane fade" id="tv-tx3" role="tabpanel">
+                            <img src="assets/images/tv/tx3pro.png" class="img-fluid" alt="Image here">
+                            <h5 class="card-title my-5">Nuestros mejores servicios...</h5>
+                          </div>
+                         <div class="tab-pane fade" id="tv-adults" role="tabpanel">
+                            <img src="assets/images/tv/Adultos.jpg" class="img-fluid" alt="Image here">
+                            <h5 class="card-title my-5"></h5>
+                          </div>
+                        </div>        
+                      </div>
+                </div>
+            </div>
+          </div>    
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted"></p>
+          </div>
+        </div>
+      </div>
+      <div align="center">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/-QfLxJD93X4?controls=0&amp;start=14" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       </iframe>
 
+      </div>
+    </section>
 
     <!-- team -->
     <section class="bg-light" id="team">
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase">Our Team</h2>
+              <h2 class="section-heading text-uppercase">Nuestro Equipo</h2>
             </div>
           </div>
           <div class="container-fluid">
@@ -487,11 +360,11 @@
                 </div>
                 <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
+                  <span class="sr-only">Anterior</span>
                 </a>
                 <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
+                  <span class="sr-only">Siguiente</span>
                 </a>
               </div>
             </div>
@@ -499,6 +372,7 @@
             <div class="col-lg-8 mx-auto text-center">
               <p class="large text-muted"></p>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -508,22 +382,24 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h2 class="section-heading text-uppercase">Cont&aacute;ctanos</h2>
             <h3 class="section-subheading text-muted"></h3>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
-              <iframe style="border: 0;" class="contact-map wow fadeInUp" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.293720549009!2d-118.2114950033043!3d33.9592893087734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c953e0a4ec5d%3A0x94f1ed9dbf5bc870!2s8448+State+St%2C+South+Gate%2C+CA+90280!5e0!3m2!1ses-419!2sus!4v1525802583710" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.0367139422834!2d-86.87942318430711!3d12.4399343994504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f711f944c39bbcd%3A0xf47f2a87ccc62d6d!2sCristo+Para+Todas+Las+Naciones!5e0!3m2!1ses!2sni!4v1533765674498" width="800" height="600" frameborder="0" style="border:0" class="contact-map wow fadeInUp" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
           </div>
         </div>
+
         <div class="row my-5">
           <div class="d-flex text-white">
             <p class="col-sm-12">
-              <i class="fas fa-phone"></i> Phone: <i class="text-info">323-316-1899 / 323-316-1897</i></p>
+              <i class="fas fa-phone"></i> Telefono: <i class="text-info">+505 87273004</i></p>
           </div>
           <div class="col-sm-12 text-white d-flex">
-              <i class="fas fa-location-arrow"></i> Address: <i class="text-info"> &nbsp;8448 state st , South Gate ca 90280</i>
+              <i class="fas fa-location-arrow"></i> Direccion: <i class="text-info"> &nbsp;Estatua de la Madre -  Parque San Juan 2 1/2 C al Oeste.</i>
+          </div>
           </div>
         </div>
       </div>
@@ -548,7 +424,7 @@
                   </div>
                   <div class="send_message">
                     <div class="icon"></div>
-                    <div class="text"><i class="fas fa-paper-plane"></i> Send</div>
+                    <div class="text"><i class="fas fa-paper-plane"></i>Send</div>
                   </div>
                 </div>
               </div>
@@ -567,9 +443,12 @@
       </div>
         
     </div>
+    <!--
     <div class="col-auto">
         <span class="btn btn-primary btn-lg float-right shadow-lg  mb-2" id="btn_add_action" title="Send a message"><i class="fas fa-envelope"></i></span>
-    </div>
+    </div> -->
+
+    
  
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -585,8 +464,11 @@
     <!-- Custom scripts for this templ  ate -->
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/js/agency.min.js"></script>
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.25.6/sweetalert2.all.js"></script>
     <script type="module" src="lib/js/application.js"></script>
+   <!-- <script type="text/javascript"  src="ajax.js"></script> -->
+
 
   </body>
 
